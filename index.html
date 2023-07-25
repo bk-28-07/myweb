@@ -1,0 +1,35 @@
+<html>
+    <head>
+<title>this is my first web page</title>
+    </head>
+    <body>
+<h1>my first website</h1>
+
+<button onclick="downloadResume()" >download resune</button>
+<script>
+   // Function to trigger the automatic download
+// Function to trigger the automatic download
+function downloadResume() {
+    // Replace 'path/to/your/resume.pdf' with the actual path to your PDF file
+    var fileUrl = 'file:///C:/Users/dell/Downloads/Noble%20Rex%20resume.pdf';
+    var fileName = 'Noble%20Rex%20resume.pdf';
+
+    var a = document.createElement('a');
+    a.href = fileUrl;
+    a.download = fileName;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+}
+
+// Attach the downloadResume function to the button's click event
+var downloadButton = document.getElementById('downloadButton');
+downloadButton.addEventListener('click', downloadResume);
+
+
+</script>
+    </body>
+    
+
+
+</html>
