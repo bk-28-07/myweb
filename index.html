@@ -5,30 +5,8 @@
     <body>
 <h1>my first website</h1>
 
-<button onclick="downloadResume()" >download resume</button>
-        <a href="./Noble%20Rex%20resume.pdf" download="Noble%20Rex%20resume.pdf"><button>download</button></a>
-<script>
-   // Function to trigger the automatic download
-// Function to trigger the automatic download
-function downloadResume() {
-    // Replace 'path/to/your/resume.pdf' with the actual path to your PDF file
-    var fileUrl = 'https://drive.google.com/file/d/1GIBKSy1iiHN86l49QQ2Wvu9W4YyCexFR/view?usp=drive_link';
-    var fileName = 'Noble%20Rex%20resume.pdf';
+<a href="./Noble%20Rex%20resume.pdf" download="Noble%20Rex%20resume.pdf"><button>download</button></a>
 
-    var a = document.createElement('a');
-    a.href = fileUrl;
-    a.download = fileName;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-}
-
-// Attach the downloadResume function to the button's click event
-var downloadButton = document.getElementById('downloadButton');
-downloadButton.addEventListener('click', downloadResume);
-
-
-</script>
     </body>
     
 
